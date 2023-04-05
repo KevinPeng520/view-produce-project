@@ -1,1 +1,80 @@
-<mxfile host="app.diagrams.net" modified="2023-04-05T17:24:31.513Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" version="20.8.22" etag="Z4ZQkg3fsvhgLUIIp3vg" type="github"><diagram name="第 1 页" id="x7htLHJ923XaKaTENGIc">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-04-05T17:33:10.017Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="KVRZXkkdG0ERKVmSPLWf" version="20.8.22" type="github">
+  <diagram name="第 1 页" id="x7htLHJ923XaKaTENGIc">
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-3" value="线程A" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="70" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-4" value="线程B" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="70" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-5" value="Redis" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="260" y="370" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-6" value="" style="endArrow=classic;html=1;rounded=0;fontSize=17;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.483;entryY=0.088;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6KmDmE27kHu3hLbR5k-i-3" target="6KmDmE27kHu3hLbR5k-i-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="420" as="sourcePoint" />
+            <mxPoint x="440" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="318" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-7" value="设置key30秒过期" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=17;" vertex="1" connectable="0" parent="6KmDmE27kHu3hLbR5k-i-6">
+          <mxGeometry x="-0.2257" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-8" value="" style="endArrow=classic;html=1;rounded=0;fontSize=17;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="6KmDmE27kHu3hLbR5k-i-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="486.5" as="sourcePoint" />
+            <mxPoint x="320" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="540" />
+              <mxPoint x="320" y="460" />
+              <mxPoint x="320" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-9" value="设置key30秒过期" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=17;" vertex="1" connectable="0" parent="6KmDmE27kHu3hLbR5k-i-8">
+          <mxGeometry x="-0.2257" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-10" value="目标方法，查询，扣减库存" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="620" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-13" value="" style="endArrow=classic;html=1;rounded=0;fontSize=17;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6KmDmE27kHu3hLbR5k-i-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="270" as="sourcePoint" />
+            <mxPoint x="680" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-15" value="先加锁成功，但是执行耗时40秒，锁已自动释放" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;" vertex="1" connectable="0" parent="6KmDmE27kHu3hLbR5k-i-13">
+          <mxGeometry x="0.1382" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-16" value="" style="endArrow=classic;html=1;rounded=0;fontSize=17;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="6KmDmE27kHu3hLbR5k-i-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="570" as="sourcePoint" />
+            <mxPoint x="680" y="700" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmDmE27kHu3hLbR5k-i-17" value="由于线程A加锁过期，所以线程B加锁成功，执行目标方法50秒" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="6KmDmE27kHu3hLbR5k-i-16">
+          <mxGeometry x="0.1382" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
